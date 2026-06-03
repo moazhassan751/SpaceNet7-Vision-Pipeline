@@ -1,0 +1,18 @@
+# Raw image datasets
+A1/output/before/
+A1/output/after/
+A2/output_a2/masks/
+CV_Final_DeepVisionPipeline/output_fp/checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/

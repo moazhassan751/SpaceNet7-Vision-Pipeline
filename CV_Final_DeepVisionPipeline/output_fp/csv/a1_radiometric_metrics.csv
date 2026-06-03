@@ -1,0 +1,4 @@
+img,dtype,PSNR_dB,SSIM,filter
+global_monthly_2018_01_mosaic_L15-0331E-1257N_1327_3160_13.tif,uint8,36.88,0.9709,Gaussian 5x5
+global_monthly_2018_01_mosaic_L15-0487E-1246N_1950_3207_13.tif,uint8,40.88,0.9789,Gaussian 5x5
+global_monthly_2018_03_mosaic_L15-0614E-0946N_2459_4406_13.tif,uint8,30.86,0.9417,Gaussian 5x5

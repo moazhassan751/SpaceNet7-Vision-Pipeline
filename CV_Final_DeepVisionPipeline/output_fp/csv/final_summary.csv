@@ -1,0 +1,21 @@
+Item,Value
+Group,1
+Scenes processed,60
+Total images,1423
+Train / Val / Test,990 / 221 / 212
+Image size,256×256
+Batch size,8
+A1 – Pre-processing,Gaussian AA + Dtype-aware norm + PSNR/SSIM demo
+A2 – Masking,Canny + Sobel + Morphological ops + Chain code + Convex Hull
+A3 – Description,GLCM (7 feats) + Geometric (11 feats) + Urban/Rural labelling
+Model,ResNet-18 + PatchTransformerBlock
+Parameters (total),"13,280,322"
+AMP fp16,True
+Balanced sampler,WeightedRandomSampler
+Loss,"CrossEntropy (class-weighted, label_smoothing=0.1)"
+Research Challenge,Transformer Integration — PatchTransformerBlock
+Best val macro-F1,0.9242
+Test accuracy,0.8774
+Test macro-F1,0.8737
+Test weighted-F1,0.8747
+Pipeline,A1 Pre-proc → A2 Masking → A3 GLCM → CNN Recognition
